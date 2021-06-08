@@ -14,7 +14,7 @@ fun binarySearching(list: List<Int>, item: Int): Int? {
         var mid = low.plus(high).div(2.0).roundToInt()
         var guess = list[mid]
 
-        when (true) {
+        when{
             guess == item -> return mid
             guess > item -> high = mid - 1
             else -> low = mid + 1
